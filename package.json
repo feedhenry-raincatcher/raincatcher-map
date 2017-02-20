@@ -19,7 +19,7 @@
   "author": "Brian Leathem",
   "license": "MIT",
   "devDependencies": {
-    "fh-wfm-template-build": "0.0.9",
+    "fh-wfm-template-build": "0.1.3",
     "grunt": "^1.0.1",
     "grunt-eslint": "^18.0.0"
   },
