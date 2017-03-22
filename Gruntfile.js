@@ -1,10 +1,19 @@
+'use strict';
 module.exports = function(grunt) {
-  'use strict';
+  require('load-grunt-tasks')(grunt);
   grunt.initConfig({
     eslint: {
       src: ["lib/**/*.js"]
+    },
+    mochify: {
+      options: {
+        reporter: 'spec'
+      },
+      unit: {
+        src: ['test/**/*-spec.js']
+      }
     }
   });
-  grunt.loadNpmTasks("grunt-eslint");
   grunt.registerTask('default', ['eslint']);
+  grunt.registerTask('test',['mochify:unit']);
 };
