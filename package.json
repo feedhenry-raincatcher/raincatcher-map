@@ -2,10 +2,10 @@
   "name": "fh-wfm-map",
   "version": "0.0.12",
   "description": "A map module for FeedHenry WFM",
-  "main": "lib/angular/map-ng.js",
+  "main": "lib/map-ng.js",
   "scripts": {
-    "build": "wfm-template-build -m 'wfm.map.directives'",
-    "watch": "wfm-template-build -w -m 'wfm.map.directives'",
+    "build": "wfm-template-build -m 'wfm.map.directives' -t lib/template",
+    "watch": "wfm-template-build -w -m 'wfm.map.directives' -t lib/template",
     "test": "grunt eslint"
   },
   "repository": {
@@ -19,11 +19,26 @@
   "author": "Brian Leathem",
   "license": "MIT",
   "devDependencies": {
+    "angular": "^1.6.3",
+    "angular-mocks": "^1.6.3",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "coffee-script": "^1.12.4",
     "fh-wfm-template-build": "0.2.1",
-    "grunt": "^1.0.1",
-    "grunt-eslint": "^18.0.0"
+    "google-maps": "^3.2.1",
+    "grunt": "^0.4.5",
+    "grunt-eslint": "^18.0.0",
+    "grunt-mochify": "^0.3.0",
+    "load-grunt-tasks": "^3.5.2",
+    "promise": "^7.1.1",
+    "rewire": "^2.5.2",
+    "should": "^11.2.1",
+    "sinon": "^1.17.7",
+    "sinon-stub-promise": "^4.0.0"
   },
   "dependencies": {
-    "fh-wfm-mediator": "0.3.1"
+    "bluebird": "^3.5.0",
+    "fh-wfm-mediator": "0.3.1",
+    "q": "^1.5.0"
   }
 }
