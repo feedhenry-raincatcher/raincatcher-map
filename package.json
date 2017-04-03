@@ -2,10 +2,10 @@
   "name": "fh-wfm-map",
   "version": "0.0.12-alpha.1",
   "description": "A map module for FeedHenry WFM",
-  "main": "lib/angular/map-ng.js",
+  "main": "lib/map-ng.js",
   "scripts": {
-    "build": "wfm-template-build -m 'wfm.map.directives'",
-    "watch": "wfm-template-build -w -m 'wfm.map.directives'",
+    "build": "wfm-template-build -m 'wfm.map.directives' -t lib/template",
+    "watch": "wfm-template-build -w -m 'wfm.map.directives' -t lib/template",
     "test": "grunt eslint"
   },
   "repository": {
